@@ -1,0 +1,26 @@
+    <div class="main-img">
+        <img src="/img/oleksandr-kurchev-9gtiGV76NnM-unsplash.jpg" alt="main img">
+    </div>
+
+<div class="content-title top-layout"> 
+    <h2>Pick the package you want</h2>
+</div>
+<div>
+    <div class="align-center">
+        {{#each items}}
+        <div class="img-box">
+            <img src="/img/{{this.imgPath}}" alt="pic">
+            <span>
+                {{this.description}}
+                {{this.price}}
+            </span>
+
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+
+
+

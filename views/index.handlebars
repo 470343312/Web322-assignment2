@@ -1,0 +1,43 @@
+<div class="second-bar">
+    <div class="main-img">
+        <img src="/img/oleksandr-kurchev-9gtiGV76NnM-unsplash.jpg" alt="main img">
+    </div>
+</div>
+<div class="content-title">
+    <h2>No cooking, just eating.</h2>
+</div>
+
+<div>
+    <div class="align-center">
+        {{#each delivery}}
+        <div class="img-box">
+            <img src="/img/{{this.imgPath}}" alt="pic">
+            <span>
+                {{this.description}}
+                {{this.price}}
+            </span>
+
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{!-- Top 4 menu --}}
+
+
+<div class="content-title top-layout"> 
+    <h2>Our chef recommendation</h2>
+</div>
+<div>
+    <div class="align-center">
+        {{#each Menu}}
+        <div class="img-box">
+            <img src="/img/{{this.imgPath}}" alt="pic">
+            <span>
+                {{this.description}}
+                {{this.price}}
+            </span>
+
+        </div>
+        {{/each}}
+    </div>
+</div>
